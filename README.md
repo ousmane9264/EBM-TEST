@@ -1,7 +1,7 @@
 # EBM-TEST
 POUR INSTALLER LE PROJET
 LE FRAMEWORK UTILISE : DJANGO
- - Il faut cloner le projet avec la commande : git clone 
+ - Il faut cloner le projet avec la commande : git clone git@github.com:ousmane9264/EBM-TEST.git par SSH ou HTTPS
 -  Acceder au dossier du projet avec la commande : cd .. EMB-TEST
 -  Lancer la commande pour installer django: python -m pip install
 - Ensuite lancer le serveur avec la commande : python3 manage.py runserver
