@@ -18,9 +18,12 @@ from django.urls import path,include
 from contact import urls
 from django.conf.urls.static import static
 from django.conf import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
      path('', include('contact.urls')),
     path('admin/', admin.site.urls),
     # path('/contact', include(contact_urls, namespace='contact')),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    # + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
+urlpatterns += staticfiles_urlpatterns()

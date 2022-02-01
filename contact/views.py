@@ -15,8 +15,7 @@ def send_data(request):
             niveau_etude = form.cleaned_data['niveau_etude']
             centre_souhaite = form.cleaned_data['centre_souhaite']
             formation_souhaitee = form.cleaned_data['formation_souhaitee']
-
-            return HttpResponseRedirect('/thanks/')
+            return HttpResponseRedirect('/')
     else:
         form = NameForm()
     return render(request, 'contact.html', {'form': form})
